@@ -34,11 +34,11 @@ Telegram::Bot::Client.run(TOKEN) do |bot| #Создание экземпляра
                 bot.api.send_message(
                         chat_id: message.chat.id,
                         text: "Отлично! Теперь выбери покрытие местности:",
-                        reply_markup: markup_retry
+                        reply_markup: markup_retry  #Создание клавиатуры с вариантами выбора 
                     )
             else #Прочие сообщения
                 begin
-                    weigth = Integer(message.text) #Проверка на число
+                    weigth = Integer(message.text) #Проверка на число и запись веса в переменную, если прошло проверку на число
                     bot.api.send_message(
                         chat_id: message.chat.id,
                         text: "Отлично! Теперь выбери покрытие местности:",
