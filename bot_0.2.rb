@@ -1,6 +1,6 @@
 require 'telegram/bot' #Подключаем gem
 
-TOKEN = '807527008:AAEMk-h2AMSjsSmsgioVMxXeK13rVXJIlJo' #Токен бота, который можно получить в телеграме у BotFather
+TOKEN = 'YOUR_TOKEN' #Токен бота, который можно получить в телеграме у BotFather
 
 kb = [ 
 Telegram::Bot::Types::InlineKeyboardButton.new(text: 'Идеальный асфальт', callback_data: "0"),
